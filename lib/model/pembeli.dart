@@ -1,25 +1,25 @@
 class Pembeli {
-  int idPembeli;
-  String namaPembeli;
   int umur;
+  String namaPembeli;
+  int obatId;
 
   Pembeli({
-    required this.idPembeli,
-    required this.namaPembeli,
     required this.umur,
+    required this.namaPembeli,
+    required this.obatId,
   });
 
   factory Pembeli.fromJson(Map<String, dynamic> pembeli) => Pembeli(
-        idPembeli: pembeli['id_pembeli'],
-        namaPembeli: pembeli['nama_pembeli'],
         umur: pembeli['umur'],
+        namaPembeli: pembeli['nama_pembeli'],
+        obatId: pembeli['obat_id'],
       );
 
   Map<String, dynamic> toJson() {
     var data = {
-      'id_pembeli': idPembeli,
-      'nama_pembeli': namaPembeli,
       'umur': umur,
+      'nama_pembeli': namaPembeli,
+      "obat_id": obatId,
     };
     return data;
   }

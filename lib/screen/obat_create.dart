@@ -41,7 +41,7 @@ class _ObatCreateState extends State<ObatCreate> {
                   apiService.createObat(_nama);
 
                   Pembeli pembeli =
-                      Pembeli(idPembeli: 1, namaPembeli: 'Ninda', umur: 20);
+                      Pembeli(umur: 20, namaPembeli: 'Ninda', obatId: 2);
                   apiService.createPembeli(pembeli);
                 },
               )

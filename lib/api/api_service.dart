@@ -1,12 +1,11 @@
 import 'dart:convert';
-import 'dart:html';
 
 import 'package:http/http.dart' as http;
 import 'package:apotek/model/obatread.dart';
 import 'package:apotek/model/pembeli.dart';
 
 class ApiService {
-  static const String baseUrl = 'http://10.0.2.2/apotek_api/api';
+  static const String baseUrl = 'http://127.0.0.1/Apotek_api/api';
 
   Future<ObatRead> getObat() async {
     final response = await http.get(Uri.parse("${baseUrl}obat/read.php"));
