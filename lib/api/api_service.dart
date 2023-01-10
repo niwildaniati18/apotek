@@ -5,8 +5,7 @@ import 'package:apotek/model/obatread.dart';
 import 'package:apotek/model/pembeli.dart';
 
 class ApiService {
-  static const String baseUrl = 'http://127.0.0.1/Apotek_api/api';
-
+  static const String baseUrl = 'http://127.0.0.1/Apotek_api/api/';
   Future<ObatRead> getObat() async {
     final response = await http.get(Uri.parse("${baseUrl}obat/read.php"));
     if (response.statusCode == 200) {

@@ -16,7 +16,7 @@ class _ObatCreateState extends State<ObatCreate> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Membaca API Online'),
+          title: const Text('Input Data'),
         ),
         body: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -24,7 +24,7 @@ class _ObatCreateState extends State<ObatCreate> {
             children: [
               TextField(
                 decoration: const InputDecoration(
-                  hintText: 'Tuliskan nama obat baru',
+                  hintText: 'Tuliskan Obat Baru',
                   labelText: 'Input Obat',
                 ),
                 onChanged: (String value) {
@@ -41,7 +41,7 @@ class _ObatCreateState extends State<ObatCreate> {
                   apiService.createObat(_nama);
 
                   Pembeli pembeli =
-                      Pembeli(umur: 20, namaPembeli: 'Ninda', obatId: 2);
+                      Pembeli(umur: 20, namaPembeli: 'Nandra', obatId: 2);
                   apiService.createPembeli(pembeli);
                 },
               )

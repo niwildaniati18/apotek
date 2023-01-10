@@ -19,7 +19,7 @@ class Pembeli {
     var data = {
       'umur': umur,
       'nama_pembeli': namaPembeli,
-      "obat_id": obatId,
+      'obat_id': obatId,
     };
     return data;
   }
