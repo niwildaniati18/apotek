@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Welcome to Flutter',
+      title: 'Apotek',
       initialRoute: ObatList.routeName,
       routes: {
         ObatList.routeName: (context) => const ObatList(),

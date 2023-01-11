@@ -27,7 +27,7 @@ class _ObatListState extends State<ObatList> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Membaca API Online'),
+        title: const Text('Nama Obat'),
       ),
       body: Center(
         child: FutureBuilder<ObatRead>(
